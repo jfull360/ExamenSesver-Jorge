@@ -1,0 +1,24 @@
+<div class="login-wrap">
+    <div class="login-html">
+        <div style="color: white; font-size: 48px; margin-bottom: 5%;">Bienvenido</div>
+        <form [formGroup]="form" (ngSubmit)="Iniciar_sesion()">
+            <div fxLayout="column" fxLayoutGap="3% grid" fxLayoutAlign="start center">
+                <div fxLayout="row" fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="100%" style="margin-top: -2%;"
+                    class="group">
+                    <app-jorge-input [form]="form" name="nombre_usuario" type="text" class="input" label="Usuario"
+                        placeholder="Ej. Batman"></app-jorge-input>
+                </div>
+                <div fxLayout="column" fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="100%" style="margin-top: -2%;"
+                    class="group">
+                    <app-jorge-input [form]="form" name="password" placeholder="Ej. Joker" type="password" class="input"
+                        data-type="password" label="Password"></app-jorge-input>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center center" class="group" style="margin-top: 5%;">
+                <app-jorge-button class="button" tipo="submit" label="Iniciar Sesión" [isDisable]="form.invalid">
+                </app-jorge-button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- <pre>{{onValid() | json}}</pre> -->

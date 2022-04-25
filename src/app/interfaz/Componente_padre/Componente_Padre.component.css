@@ -1,0 +1,13 @@
+/* .ancho500PanelSelect {
+    min-width: 500px !important;
+  }
+  
+  .ancho600PanelSelect {
+    min-width: 600px !important;
+  } */
+  
+.container{
+  width: 100%;
+  height: 100%;
+  max-width: 100000px;
+}

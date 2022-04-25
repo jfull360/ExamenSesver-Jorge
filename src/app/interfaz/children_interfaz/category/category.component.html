@@ -1,0 +1,37 @@
+<div style="color: rgb(0, 0, 0); font-size: 35px; ">Resultado de los productos</div>
+
+<div *ngFor="let product of any_brand_arreglo">
+  <app-jorge-card title="Marca: {{product.brand}}"  
+  
+  Name="{{product.brand}}"  
+  Brand="{{product.brand}}"
+  Image_link = "{{product.image_link}}"
+  Price = "{{product.price}}"
+  [Rating]="product.rating"
+  Category = "{{product.category}}"
+  Description = "{{product.description}}"
+  Product_type = "{{product.product_type}}"
+  >
+
+  <mat-list role="list">
+    <mat-list-item role="listitem" style="margin-bottom:1%">Nombre: {{product.name}}</mat-list-item>
+    <mat-list-item role="listitem" style="margin:1%">Precio: {{product.price}}</mat-list-item>
+    <mat-list-item role="listitem" style="margin:1%  ; height: auto; word-wrap: break-word;">Descripción: 
+      <div [innerHTML]="product.description"></div>  
+    </mat-list-item>
+    <mat-list-item role="listitem" style="margin:1%">Categoria: {{product.category}}</mat-list-item>
+  </mat-list>
+
+  <div style="width: 500px;  height: 500px;  ">
+    <img src="{{product.image_link}}"   style="
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 100%;">
+  </div>
+  
+  </app-jorge-card>
+</div>

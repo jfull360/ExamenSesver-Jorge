@@ -1,0 +1,14 @@
+<div [formGroup]="form">
+    <p>&nbsp;</p>
+      <mat-form-field [class]="clase" appearance="fill">
+        <mat-label style="width: 500px; white-space: initial;">{{label}}</mat-label>
+        <input
+            matInput
+            [type]="type"
+            [placeholder]="placeholder"
+            [formControlName]="name"
+            [maxlength]="maxLength"
+            [pattern]="pattern"
+        >
+      </mat-form-field>
+  </div>

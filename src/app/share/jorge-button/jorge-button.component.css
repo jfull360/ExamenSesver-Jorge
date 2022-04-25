@@ -1,0 +1,7 @@
+button:disabled {
+    background-color: rgb(83, 83, 83);
+}
+
+.mat-button.mat-primary .mat-button-focus-overlay {
+    background-color: rgb(117, 117, 117);
+  }

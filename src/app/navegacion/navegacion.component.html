@@ -1,0 +1,12 @@
+<mat-nav-list>
+    <!-- [routerLink]="['/app-interfaz', '?brand=colourpop']"  -->
+    <a mat-list-item routerLink="/Menu/any-brand" (click)="onSidenavClose()">
+        <mat-icon class="color_icono">home</mat-icon> <span class="nav-caption">Cualquier Marca</span>
+    </a>
+    <a mat-list-item routerLink="/Menu/product-type" (click)="onSidenavClose()">
+        <mat-icon class="color_icono">assignment_ind</mat-icon> <span class="nav-caption">Tipo de producto</span>   
+    </a>
+    <a mat-list-item routerLink="/Menu/category" (click)="onSidenavClose()">
+        <mat-icon class="color_icono">account_balance</mat-icon><span class="nav-caption">Categoria</span>
+    </a>
+</mat-nav-list>

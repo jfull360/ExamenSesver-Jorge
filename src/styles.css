@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.ancho500PanelSelect {
+    min-width: 500px !important;
+  }
+  
+  .ancho600PanelSelect {
+    min-width: 600px !important;
+  }
+  
+ 
+  .mat-form-field-flex {
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 500px !important;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+  width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
