@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-category',
   templateUrl: './category.component.html',
-  providers: [ProductosService, { provide: 'endPoint', useValue: '?category=powder' }]
+  providers: [ProductosService, { provide: 'endPoint', useValue: '?product_category=powder' }]
 })
 export class CategoryComponent implements OnInit {
 
@@ -14,7 +14,6 @@ export class CategoryComponent implements OnInit {
  
   any_brand_arreglo: Producto[] = [];
 
-  
   ngOnInit(): void {
 
     this.productosService.obtener_data().subscribe(item => {
