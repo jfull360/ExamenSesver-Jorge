@@ -17,7 +17,7 @@ import { Componente_PadreComponent } from './Componente_padre/Componente_padre.c
         { path: 'any-brand', component: AnyBrandComponent},
         { path: 'category', component: CategoryComponent},
         { path: 'product-type', component: ProductTypeComponent},
-        { path: '**', redirectTo: 'all'}
+        { path: '**', redirectTo: 'any-brand'}
       ]
     }
   ])],

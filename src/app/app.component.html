@@ -1,5 +1,5 @@
 <div style="background-color: #1a5ea2; width: 100%; height: 80px;" *ngIf="log()">
-  <div class="example-sidenav-content">
+  <div class="example-sidenav-content" >
     <div fxLayout="row wrap" fxLayoutGap="5% grid" fxLayoutAlign="space-between center">
       <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" >
         <button  type="button" style="background-color: #1a5ea2; border: none;  margin-top: 50%; " mat-button (click)="drawer.toggle()">
@@ -31,9 +31,7 @@
 
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="over">
-
     <app-navegacion (click)="onSidenavClose()"></app-navegacion>
-
   </mat-drawer>
 
   <div class="container">
