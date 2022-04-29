@@ -1,16 +1,18 @@
-<div style="color: rgb(0, 0, 0); font-size: 35px; margin-left: 5%;">Resultado de los productos con la marca colourpop</div>
+<div style="color: rgb(0, 0, 0); font-size: 35px; margin: 5%;">Resultado de los productos con la marca colourpop</div>
+
+<div style="color: rgb(0, 0, 0); font-size: 35px; margin: 5%;">Los precios estan en la moneda local del pais {{Pais}}</div>
 
 <div *ngFor="let product of any_brand_arreglo">
-  <app-jorge-card title="Marca: {{product.brand}}"  
-  
-  Name="{{product.brand}}"  
+  <app-jorge-card title="Marca: {{product.brand}}"
+  Name="{{product.brand}}"
   Brand="{{product.brand}}"
   Image_link = "{{product.image_link}}"
-  Price = "{{product.price}}"
+  Price = "{{product.price }} "
   [Rating]="product.rating"
   Category = "{{product.category}}"
   Description = "{{product.description}}"
   Product_type = "{{product.product_type}}"
+  [Product_colors]="product.product_colors"
   >
 
   <mat-list role="list">
@@ -22,7 +24,7 @@
     <mat-list-item role="listitem" style="margin:1%">Categoria: {{product.category}}</mat-list-item>
   </mat-list>
 
-  <div style="width: 500px;  height: 500px;  ">
+  <div style="width: 500px;  height: 500px;">
     <img src="{{product.image_link}}"   style="
     background-size: cover;
     object-fit: cover;

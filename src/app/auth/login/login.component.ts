@@ -38,7 +38,9 @@ Iniciar_sesion(): void{
     sessionStorage.setItem('nombre_usuario', (this.usuario.nombre_usuario));
     sessionStorage.setItem('password', (this.usuario.password));
     
-    this.router.navigate([`/Menu`,"any-brand"]);
+    //this.router.navigate([`/Menu`,"any-brand"]);
+    this.router.navigate([`/Menu`,"seleccionar_pais"]);
+    
   }
     else {
       Swal.fire({

@@ -34,6 +34,7 @@ import { AnyBrandComponent } from './interfaz/children_interfaz/any-brand/any-br
 import { CategoryComponent } from './interfaz/children_interfaz/category/category.component';
 import { ProductTypeComponent } from './interfaz/children_interfaz/product-type/product-type.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -48,6 +49,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     MatListModule,
     MatIconModule,
+    MatSelectModule,
+    
     NgbModule
   ],
   providers: [],

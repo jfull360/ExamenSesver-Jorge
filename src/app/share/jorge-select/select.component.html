@@ -1,0 +1,12 @@
+<div [formGroup]="form">
+    <mat-form-field appearance="fill">
+        <mat-label>{{label}}</mat-label>
+        <mat-select [formControlName]="name" (selectionChange)="onSelected($event)">
+          <mat-option *ngFor="let item of options" [value]="item">
+            <div style="white-space: initial; ">
+                {{item.Pais}}
+            </div>
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+</div>

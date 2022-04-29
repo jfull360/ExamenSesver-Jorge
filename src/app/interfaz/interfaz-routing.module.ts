@@ -6,6 +6,7 @@ import { AllComponent } from './children_interfaz/all/all.component';
 import { AnyBrandComponent } from './children_interfaz/any-brand/any-brand.component';
 import { CategoryComponent } from './children_interfaz/category/category.component';
 import { ProductTypeComponent } from './children_interfaz/product-type/product-type.component';
+import { SelectPaisComponent } from './children_interfaz/select-pais/select-pais.component';
 import { Componente_PadreComponent } from './Componente_padre/Componente_padre.component';
 
 @NgModule({
@@ -17,6 +18,8 @@ import { Componente_PadreComponent } from './Componente_padre/Componente_padre.c
         { path: 'any-brand', component: AnyBrandComponent},
         { path: 'category', component: CategoryComponent},
         { path: 'product-type', component: ProductTypeComponent},
+        { path: 'seleccionar_pais', component: SelectPaisComponent},
+        
         { path: '**', redirectTo: 'any-brand'}
       ]
     }

@@ -1,0 +1,22 @@
+<form [formGroup]="form" (ngSubmit)="Siguiente()">
+
+<h1>Selecciona el pais del cual quieres que se te muestren los precios</h1>
+
+<!-- <div *ngFor="let mama of this.any_brand_arreglo "  >
+
+    <div>{{mama.AED}}</div>
+    <div>{{mama | json}}</div>
+    
+    <sesver-select [form]="form" name="symbols" label="Paises" [options]="mama"></sesver-select> 
+
+</div> -->
+
+<jorge-select [form]="form" name="name" label="Paises" [options]="any_brand_arreglo"></jorge-select> 
+
+
+<app-jorge-button label="Siguiente" tipo="submit" > </app-jorge-button>
+
+</form>
+
+
+

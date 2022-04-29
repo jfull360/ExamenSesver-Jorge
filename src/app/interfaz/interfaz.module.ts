@@ -29,6 +29,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { InterfazComponent } from './interfaz.component';
 import { AllComponent } from './children_interfaz/all/all.component';
+import { SelectPaisComponent } from './children_interfaz/select-pais/select-pais.component';
+import { JorgeSelectComponent } from '../share/jorge-select/select.component';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,8 @@ import { AllComponent } from './children_interfaz/all/all.component';
     CategoryComponent,
     ProductTypeComponent,
     InterfazComponent,
+    JorgeSelectComponent,
+    SelectPaisComponent,
   ],
   imports: [
     CommonModule,
@@ -52,6 +57,7 @@ import { AllComponent } from './children_interfaz/all/all.component';
     MatCardModule,
     MatIconModule,
     NgbModule,
+    MatSelectModule,
     MatFormFieldModule,
     MatListModule,
     HttpClientModule,

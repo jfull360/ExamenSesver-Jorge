@@ -14,6 +14,8 @@ export class NavegacionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+
   public onSidenavClose = () => {
     this.sidenavClose.emit();
     
