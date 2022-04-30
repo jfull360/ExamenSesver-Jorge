@@ -21,6 +21,7 @@ export class AnyBrandComponent implements OnInit {
   any_brand_arreglo: Producto[] = [];
   Pais="";
   Signo_cambio="";
+  conversion:number=0;
   //get_new_price!: Subscription;
   //user_selection: Symbols=[];
 
@@ -40,16 +41,18 @@ export class AnyBrandComponent implements OnInit {
     this.productosService.get_new_price(this.Signo_cambio).subscribe(item =>{
 
       if (item != null) {
-          //AQUI OBTENDRIAMOS YA ELRESUTADO DE LA MONEDA CONVERTIDA
+        //AQUI OBTENDRIAMOS YA ELRESUTADO DE LA MONEDA CONVERTIDA
+        
+        this.conversion=item;
       }
 
-
+      console.log("me llego",this.conversion)
     });
 
     this.productosService.obtener_data().subscribe(item => {
       if (item != null) {
         this.any_brand_arreglo = item
-        console.log(this.any_brand_arreglo)
+        //console.log(this.any_brand_arreglo)
       }
     },
       error => Swal.fire('Error no se pudo obtener la información', error, 'error')
